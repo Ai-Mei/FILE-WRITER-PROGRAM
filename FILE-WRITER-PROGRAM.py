@@ -8,6 +8,13 @@ def write_input():
 
 write_input()
 
+while True:
 # Ask the user if they have more lines to enter.
+        user_decision = input("Are there more lines y/n? ")
 # If yes, repeat the procedure.
+        if user_decision == "y":
+                write_input()
 # If no, the program is done.
+        elif user_decision == "n":
+                print("Your inputs are saved in the file named mylife.")
+                break
